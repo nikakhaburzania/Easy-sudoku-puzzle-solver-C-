@@ -1,8 +1,8 @@
 # Sudoku-puzzle-solver-C++
-This little program solves sudoku puzzles. Written in C++11
+This little program solves sudoku puzzles using breadth first search. Written in C++11
 
 # To fill the board
-Go to file `Solver.cpp` and in fillBoard class replace current numbers with your sudoku puzzle numbers.
+Go to file `Solver.cpp` and in fillBoard method replace current numbers with your sudoku puzzle numbers.
 
 
 # To compile:
