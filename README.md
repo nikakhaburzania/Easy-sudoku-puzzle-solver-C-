@@ -1,14 +1,14 @@
-# Easy-sudoku-puzzle-solver-C++
-This little program solves easy to moderate sudoku puzzles. Written in C++11
+#Sudoku-puzzle-solver-C++
+This little program solves sudoku puzzles. Written in C++11
 
 # To fill the board
-Go to file `BreadthFSSudoku.cpp` and in fillBoard class replace current numbers with your sudoku puzzle numbers.
+Go to file `Solver.cpp` and in fillBoard class replace current numbers with your sudoku puzzle numbers.
 
 
 # To compile:
 
-g++ -std=c++11 -g -o BreadthFSSudoku BreadthFSSudoku.cpp
+g++ -std=c++11 -g -o Solver Solver.cpp
 
 and then 
 
-./BreadthFSSudoku
+./Solver
