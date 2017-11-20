@@ -1,4 +1,4 @@
-#Sudoku-puzzle-solver-C++
+# Sudoku-puzzle-solver-C++
 This little program solves sudoku puzzles. Written in C++11
 
 # To fill the board
