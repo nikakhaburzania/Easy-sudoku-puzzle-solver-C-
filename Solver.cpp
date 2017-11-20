@@ -7,6 +7,7 @@
 using std::vector;
 using std::string;
 
+#include <iostream>
 
 using std::cout;
 using std::endl;
@@ -29,7 +30,7 @@ bool fillBoard(Sudoku * board, const vector<string> & fillWith) {
 }
 
 
-/* This is just for a test case for this uncomment answer vector and last comment in this file
+
 bool checkAnswer(Sudoku * board, const vector<string> & answer) {
     
     for (size_t row = 0; row < answer.size(); ++row) {
@@ -44,8 +45,6 @@ bool checkAnswer(Sudoku * board, const vector<string> & answer) {
         
     return true;
 }
-*/
-
 
 int main() {
         
@@ -61,7 +60,7 @@ int main() {
                                  "  1    68",
                                  "  85   1 ",
                                  " 9    4  "};
-        /*                         
+                                 
         vector<string> answer{  "812753649",
                                 "943682175",
                                 "675491283",
@@ -71,7 +70,7 @@ int main() {
                                 "521974368",
                                 "438526917",
                                 "796318452"};
-        */                         
+                                 
         unique_ptr<Sudoku> board(new Sudoku(9));
 
         if (!fillBoard(board.get(), hardBoard)) {
@@ -91,10 +90,7 @@ int main() {
         }
         
         Sudoku * solvedBoard = static_cast<Sudoku*>(solution);
-            solvedBoard->write(cout);
-            cout << "\nNodes expanded: " << search.getNodesExpanded() << std::endl;
-
-         /* This is just a test case if you have answer to puzzle, for this uncomment answer vector
+        
         if (checkAnswer(solvedBoard, answer)) {
             cout << "\nPassed: Solution was:\n";
             solvedBoard->write(cout);
@@ -104,7 +100,6 @@ int main() {
             cout << "Failed: Solution was returned, but it was the wrong answer\n";
             return 1;
         }
-        */
     }
     
     
