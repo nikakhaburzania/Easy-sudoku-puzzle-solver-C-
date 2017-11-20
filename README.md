@@ -7,8 +7,8 @@ Go to file `Solver.cpp` and in fillBoard method replace current numbers with you
 
 # To compile:
 
-g++ -std=c++11 -g -o Solver Solver.cpp
+`g++ -std=c++11 -g -o Solver Solver.cpp`
 
 and then 
 
-./Solver
+`./Solver`
